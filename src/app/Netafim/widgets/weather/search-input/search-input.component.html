@@ -1,0 +1,20 @@
+<!-- 
+<mat-form-field>
+    <input matInput class="form-field" [formControl]="searchPlaceTerm" placeholder="Search for a place">
+</mat-form-field> -->
+
+<form class="search-form">
+    <mat-form-field>
+      <input type="text"
+             placeholder="Select a place (city)"
+             aria-label="text"
+             matInput
+             [formControl]="placeControl"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="getName.bind(this)">
+        <mat-option *ngFor="let city of filteredOptions | async" [value]="city.id">
+          {{city.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>

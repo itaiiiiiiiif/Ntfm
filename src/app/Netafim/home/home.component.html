@@ -1,0 +1,6 @@
+<section class="home-page">
+    <h2>Welcome to Home page ...</h2>
+    <section class="widget-wrapper">
+        <app-weather-widget *ngIf="cities?.length" [placesToSearch]="cities"></app-weather-widget>
+    </section>
+</section>

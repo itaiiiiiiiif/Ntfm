@@ -1,0 +1,21 @@
+<header color="primary">
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/Home']">Netafim Task - Weather application</a>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+          [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" title="Actually will redirect to Home">
+            <a class="nav-link text-dark" [routerLink]="['/Home']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" title="Actually will redirect to Home">
+            <a class="nav-link text-dark" [routerLink]="['/Home']">Contact</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" title="Actually will redirect to Home">
+            <a class="nav-link text-dark" [routerLink]="['/Home']">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

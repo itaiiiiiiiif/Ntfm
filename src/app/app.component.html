@@ -1,0 +1,10 @@
+<body>
+  <header>
+    <app-weather-widget [placesToSearch]="" [initial]="_$initialData"></app-weather-widget>
+  </header>
+  <main class="container">
+    <button *ngIf="!clicked" mat-raised-button color="primary" [routerLink]="['/Home']" (click)="clicked = true">Show Home page..</button>
+    <router-outlet class="routers" *ngIf="clicked"></router-outlet>
+  </main>
+  <footer></footer>
+</body>

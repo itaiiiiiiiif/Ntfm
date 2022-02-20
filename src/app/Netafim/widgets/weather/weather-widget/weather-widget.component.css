@@ -1,0 +1,39 @@
+.widget-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.widget-wrapper .widget-table thead td {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 5rem;
+    border: 2px solid #3f51b5;
+    text-align: center;
+    float: left;
+}
+
+.widget-wrapper .widget-table thead td .expend-td {
+    cursor: pointer;
+}
+
+.widget-wrapper .widget-table thead td:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+}
+
+.widget-wrapper .widget-table thead td:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 10px;
+}
+
+.widget-wrapper table {
+    border-collapse: collapse;
+}
+
+.widget-wrapper .widget-table thead td:not(:first-child) {
+    border-left: none;
+}

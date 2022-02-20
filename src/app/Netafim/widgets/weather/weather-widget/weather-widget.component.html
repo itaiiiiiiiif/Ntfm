@@ -1,0 +1,18 @@
+<section class="widget-wrapper">
+    <table class="widget-table">
+        <thead>
+            <td>
+                <app-search-input *ngIf="placesToSearch?.length" (placeEmitter)="onPlaceChange($event)" [places]="placesToSearch"></app-search-input>
+            </td>
+            <td>
+                <app-weather  class="expend-td" *ngIf="weatherInfo" [info]="weatherInfo"></app-weather>
+            </td>
+            <td>
+                <app-date-view *ngIf="weatherInfo" [info]="weatherInfo"></app-date-view>
+            </td>
+            <td>
+                <app-naview *ngIf="weatherInfo" [info]="weatherInfo"></app-naview>
+            </td>
+        </thead>
+    </table>
+</section>
