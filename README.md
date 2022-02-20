@@ -1,4 +1,20 @@
-# Ntfm
+# Ntfm - simple weather app
+
+This app was developed by Itai Ifrah ( `https://www.linkedin.com/in/itaiifrah/` ).
+
+# Installtion and run
+
+- Clone the project by typing `git clone https://github.com/itaiiiiiiiif/Ntfm.git` in your terminal/cmd
+
+- Change dir `cd Ntfm`
+
+- run `npm i`
+
+- run `npm start` to run the application
+
+-  on your browser go to `http://localhost:4200`
+
+# Angular README
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
